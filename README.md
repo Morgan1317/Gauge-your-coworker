@@ -1,20 +1,21 @@
 # Gauge-your-coworker
 
 # Project Name
-​
-​
+
 ## Project Summary
-​
+
 ...
-​
+
 ## Developers
-​
+
 1. Ema Halimi
-​
+
+
 2.Hieu Le
-​
+
+
 3. Morgan Holcomb 
-​
+
 ## Installation Instructions
 ​
 - Clone our repo to your computer
