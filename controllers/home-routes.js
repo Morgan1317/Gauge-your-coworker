@@ -14,8 +14,7 @@ router.get('/', (req, res) => {
     include: [
       {
         model: Comment,
-        attributes: ['id', 'comment_text', 'Employee_id', 'user_id', 'created_at'],
-   
+        attributes: ['id', 'comment_text', 'star_style', 'Employee_id', 'user_id', 'created_at'],
       }
     ]
   })
@@ -23,7 +22,6 @@ router.get('/', (req, res) => {
     .then(dbEmployeeData => {
       const employees = dbEmployeeData.map(employee => employee.get({ plain: true }));
 // render handlebar home page for this data. 
-     
         if (req.session.user_id) {
         // second arguement of res.render should be an object
         //containing the data you wish to display in the templates
@@ -53,7 +51,7 @@ router.get('/employees/:id', auth, (req, res) => {
     include: [
       {
         model: Comment,
-        attributes: ['id', 'comment_text', 'Employee_id', 'created_at'],
+        attributes: ['id', 'comment_text', 'star_style', 'Employee_id', 'created_at'],
 
       }
     ]

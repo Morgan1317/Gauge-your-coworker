@@ -24,5 +24,5 @@ async function newEmployee(event) {
         alert(response.statusText);
     }
 }; 
-  document.querySelector('.new-employee-form').addEventListener('submit', newEmployee);
-  
+
+document.querySelector('.new-employee-form').addEventListener('submit', newEmployee);

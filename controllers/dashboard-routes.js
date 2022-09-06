@@ -13,8 +13,7 @@ router.get('/', auth, (req, res) => {
     include: [
       {
         model: Comment,
-        attributes: ['id', 'comment_text', 'Employee_id', 'user_id', 'created_at'],
-   
+        attributes: ['id', 'comment_text', 'star_style', 'Employee_id', 'user_id', 'created_at'],
       }
     ]
   })
@@ -45,7 +44,7 @@ router.get('/edit/:id', auth, (req, res) => {
     include: [
       {
         model: Comment,
-        attributes: ['id', 'comment_text', 'employee_id', 'created_at'],
+        attributes: ['id', 'comment_text', 'star_style', 'employee_id', 'created_at'],
 
       }
     ]
@@ -77,7 +76,8 @@ router.get('/edit/comment/:id', (req, res) => {
     },
     attributes: [
       'id',
-      'comment_text'
+      'comment_text',
+      'star-style'
     ],
   })
     .then(dbcommentData => {

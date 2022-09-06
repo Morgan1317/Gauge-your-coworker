@@ -15,7 +15,6 @@ async function newEmployee(event) {
             employee_name,
             work_name,
             position,
-            
         }),
         headers: {
             'Content-Type': 'application/json'
@@ -27,5 +26,5 @@ async function newEmployee(event) {
         alert(response.statusText);
     }
 }; 
-  document.querySelector('.edit-employee-form').addEventListener('submit', newEmployee);
-  
+
+document.querySelector('.edit-employee-form').addEventListener('submit', newEmployee);

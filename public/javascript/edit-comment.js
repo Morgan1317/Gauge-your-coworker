@@ -11,7 +11,7 @@ async function editComment(event) {
         method: 'PUT',
         body: JSON.stringify({
             comment_text,
-            
+            star_style
         }),
         headers: {
             'Content-Type': 'application/json'
@@ -23,5 +23,5 @@ async function editComment(event) {
         alert(response.statusText);
     }
 }; 
-  document.querySelector('.edit-comment-form').addEventListener('submit', editComment);
-  
+
+document.querySelector('.edit-comment-form').addEventListener('submit', editComment);

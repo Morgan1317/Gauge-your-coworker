@@ -25,11 +25,7 @@ foreignKey: 'user_id'
 });
 
 Comment.belongsTo(Employee, {
-    foreignKey: 'employee_id',
-    
-   
-    
+    foreignKey: 'employee_id'
 });
-
 
 module.exports = { Employee, User, Comment };
