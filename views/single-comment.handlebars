@@ -8,6 +8,18 @@
         {{!-- TODO: created a div so we can put the star rating using rater js --}}
     </div>
 </form>
+<div class="star-styles col-4">
+    <input type="radio" name="rate" id="rate-1">
+    <label for="rate-1" class="fas fa-star"></label>
+    <input type="radio" name="rate" id="rate-2">
+    <label for="rate-2" class="fas fa-star"></label>
+    <input type="radio" name="rate" id="rate-3">
+    <label for="rate-3" class="fas fa-star"></label>
+    <input type="radio" name="rate" id="rate-4">
+    <label for="rate-4" class="fas fa-star"></label>
+    <input type="radio" name="rate" id="rate-5">
+    <label for="rate-5" class="fas fa-star"></label>
+</div>
 
 <form class="comment-form row ">
 <div class="row">
@@ -28,7 +40,5 @@
 
 {{!-- TODO: link it to rater js file --}}
 {{!-- <script src="node-modules/rater-js/index.js"></script> --}}
-{{!-- <script src="/javascript/rater.js"></script> --}}
-
-
+<script src="/javascript/rater.js"></script>
 {{/if}}
