@@ -18,8 +18,7 @@ router.get('/:id', (req, res) => {
     },
   attributes: [
   'id',
-  'comment_text',
-  'star_style'
+  'comment_text'
 ],
 
   })
@@ -59,8 +58,7 @@ router.put('/:id', auth,(req, res) => {
 router.post('/', auth, (req, res) => {
   Comment.create({
     employee_id: req.body.employee_id,
-    comment_text: req.body.comment_text,
-    star_style: req.body.star_style
+    comment_text: req.body.comment_text
   })
     .then(dbCommentData => res.json(dbCommentData))
     .catch(err => {

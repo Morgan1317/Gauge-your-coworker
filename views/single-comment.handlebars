@@ -3,7 +3,9 @@
 </div>
 
 {{#if loggedIn}}
-<div class="row">
+
+<form class="comment-form row ">
+<div class="container">
 <div class="star-style col-4" id="star-style">
     <input type="radio" name="rate" id="rate-1">
     <label for="rate-1" class="fas fa-star"></label>
@@ -17,8 +19,6 @@
     <label for="rate-5" class="fas fa-star"></label>
 </div>
 </div>
-
-<form class="comment-form row ">
 <div class="row">
     <div class="col-6">
         <textarea id="comment-text" class='comment-textarea'name="comment-text"></textarea>

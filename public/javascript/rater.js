@@ -5,3 +5,7 @@ const btn = document.querySelector("button");
     styles.style.display = "block";
     return false;
 }
+
+// $(document).ready(function() {
+//     $('#starRate').mdbRate();
+// });
